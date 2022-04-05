@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Frontend Mentor | Dine Website Challenge - Booking</title>
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="css/andy-bell-reset.css" />
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/booking.css" />
+    </head>
+    <body class="booking-page">
+        <main>
+            <section class="booking-hero">
+                <div class="container">
+                    <div class="logo booking-logo">
+                        <a href="index.html">
+
+                            <img class="logo-img" src="images/logo.svg" alt="dine" />
+                        </a>
+                        </div>
+                        <!-- /.booking-logo -->
+                    <div class="booking-hero-text">
+                        
+                        <h1 class="booking-title">Reservations</h1>
+
+                        <p class="booking-subhead">
+                            We can't wait to host you. If you have any special
+                            requirements please feel free to call on the phone
+                            number below. We'll be happy to accommodate you.
+                        </p>
+
+                        <a class="btn btn-ghost btn-booking-hero" href="#"
+                            >Reserve Place</a
+                        >
+                    </div>
+                    <!-- /.booking-hero-text -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.booking-hero -->
+        </main>
+
+        <div class="form-block">
+            <div class="container">
+                <form class="reservation-form">
+                    <div class="name-block">
+                        <label class="sr-only" for="name">Name</label>
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Name"
+                        />
+                        <small class="error-msg error-msg-required"></small>
+                    </div>
+                    <!-- /.name-block -->
+
+                    <div class="email-block">
+                        <label class="sr-only" for="email">Email</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Email"
+                        />
+                        <small class="error-msg error-msg-required"></small>
+                    </div>
+                    <!-- /.email-block -->
+
+                    <div class="date-block">
+                        <p class="pick-date">Pick a date</p>
+                        <small class="error-msg error-date-incomplete"
+                            ></small
+                        >
+                        <div class="form-control">
+                            <label class="sr-only" for="month">Month</label>
+                        <input
+                            type="number"
+                            name="month"
+                            class="month"
+                            id="month"
+                            placeholder="MM"
+                            
+                            min="01"
+                            max="12"
+                        />
+
+                        <label class="sr-only" for="day">Day</label>
+                        <input
+                            type="number"
+                            name="day"
+                            class="day"
+                            id="day"
+                            placeholder="DD"
+                            
+                            min="01"
+                            max="31"
+                        />
+
+                        <label class="sr-only" for="year">Year</label>
+                        <input
+                            type="number"
+                            name="year"
+                            class="year"
+                            id="year"
+                            placeholder="YYYY"
+                            
+                            min="2021"
+                            max="2030"
+                        />
+                        </div><!-- /.form-control -->
+                        
+                    </div>
+                    <!-- /.date-block -->
+
+                    <div class="time-block">
+                        <p class="pick-time">Pick a time</p>
+                        <small class="error-msg error-time-incomplete"
+                            ></small
+                        >
+
+                        <div class="form-control">
+                            <label class="sr-only" for="hour">Hour</label>
+                            <input
+                                type="number"
+                                name="hour"
+                                class="hour"
+                                id="hour"
+                                placeholder="09"
+                                
+                                min="01"
+                                max="12"
+                            />
+
+                            <label class="sr-only" for="minute">Minute</label>
+                            <input
+                                type="number"
+                                name="minute"
+                                class="minute"
+                                id="minute"
+                                placeholder="00"
+                                
+                                min="00"
+                                max="59"
+                            />
+
+                            <div class="dropdown">
+                                <!-- The trigger element -->
+                                <button class="btn-am-pm">
+                                    <div
+                                        id="default-meridiem"
+                                        class="default-meridiem"
+                                    >
+                                        AM
+                                    </div>
+                                    <img
+                                        class="arrow"
+                                        src="images/icons/icon-arrow.svg"
+                                        alt=""
+                                    />
+                                </button>
+
+                                <!-- The content -->
+                                <div class="dropdown-content">
+                                    <div class="dropdown-item dropdown-am">
+                                        <img
+                                            class="check-am"
+                                            src="images/icons/icon-check.svg"
+                                            alt=""
+                                        />
+                                        <p class="meridiem am">AM</p>
+                                    </div>
+                                    <!-- /.dropdown-item -->
+
+                                    <div class="dropdown-item dropdown-pm">
+                                        <img
+                                            class="check-pm"
+                                            src="images/icons/icon-check.svg"
+                                            alt=""
+                                        />
+                                        <p class="meridiem pm">PM</p>
+                                    </div>
+                                    <!-- /.dropdown-item -->
+                                </div>
+                                <!-- /.dropdown-content -->
+                            </div>
+                            <!-- /.dropdown -->
+                        </div>
+                        <!-- /.form-control -->
+                    </div>
+                    <!-- /.time-block -->
+
+                    <div class="people-block">
+                        <button class="btn-people btn-people-minus" id="minus">
+                            <span class="sr-only">minus</span>
+                            <img src="images/icons/icon-minus.svg" alt="" />
+                        </button>
+
+                        <p class="people-display">
+                            <span class="number-of-people">2</span> people
+                        </p>
+
+                        <button class="btn-people btn-people-plus" id="plus">
+                            <span class="sr-only">plus</span>
+                            <img src="images/icons/icon-plus.svg" alt="" />
+                        </button>
+                    </div>
+                    <!-- /.people-block -->
+
+                    <button
+                        class="btn btn-reservation"
+                        id="btn-reservation"
+                        type="submit"
+                    >
+                        Make Reservation
+                    </button>
+                </form>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.form-block -->
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="images/logo.svg" alt="dine" />
+                    </a>
+                </div>
+                <!-- /.footer-logo -->
+                <div class="company-info">
+                    <div class="address">
+                        <p>Marthwaite, Sedbergh</p>
+                        <p>Cumbria</p>
+                        <p>+00 44 123 4567</p>
+                    </div>
+                    <!-- /.address -->
+                    <div class="hours">
+                        <p>Open Times</p>
+                        <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
+                        <p>Sat - Sun: 09:00 AM - 11:30 PM</p>
+                    </div>
+                    <!-- /.hours -->
+                </div>
+                <!-- /.company-info -->
+            </div>
+            <!-- /.container -->
+        </footer>
+        <!-- /.footer -->
+
+        <!-- <script src="js/script.js"></script> -->
+        <script src="js/booking.js"></script>
+        <script src="js/dropdown.js"></script>
+    </body>
+</html>

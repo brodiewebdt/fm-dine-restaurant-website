@@ -1,0 +1,338 @@
+
+
+/************* Booking Hero Section **************/
+.booking-hero {
+    background-image: url(../images/booking/hero-bg-mobile@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    padding: 3.5rem 0 14.5rem;
+}
+
+.booking-hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.booking-logo {
+    margin-bottom: 2.5rem;
+}
+
+.logo-img {
+    margin: 0 auto;
+}
+
+.booking-subhead {
+    margin: 1rem 0 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .booking-hero-text {
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+@media (min-width: 767px) {
+    .booking-hero {
+        background-image: url(../images/booking/hero-bg-tablet@2x.jpg);
+        padding-bottom: 16.875rem;
+    }
+
+    .booking-logo {
+        margin-bottom: 4rem;
+    }
+
+    .logo-img {
+    margin: 0;
+}
+
+    .btn-booking-hero {
+        display: none;
+    }
+}
+
+@media (min-width: 1080px) {
+    .booking-hero {
+        background-image: url(../images/booking/hero-bg-desktop@2x.jpg);
+    }
+
+    .booking-hero-text {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .booking-hero {
+        padding-bottom: 7.875rem;
+    }
+
+    .booking-hero-text {
+        align-items: flex-start;
+        margin: 0;
+        text-align: initial;
+        width: 445px;
+    }
+
+    .booking-logo {
+        margin-bottom: 10rem;
+    }
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.people-block,
+input {
+   margin: 1rem 0 1.5rem;
+    padding: 0.5rem 1rem; 
+}
+
+.people-block {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 1rem 0 1.5rem;
+    padding: 0.5rem 1rem; */
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid hsl(0, 0%, 59%);
+    /* margin: 1rem 0 1.5rem;
+    padding: 0.5rem 1rem; */
+    width: 100%;
+}
+
+.name-block,
+.email-block,
+.date-block,
+.time-block {
+    position: relative;
+}
+
+#day,
+#minute {
+    margin: 0 0.2rem;
+}
+
+#month,
+#day,
+#hour,
+#minute {
+    width: 73px;
+}
+
+#year,
+.dropdown {
+    width: 88px;
+}
+
+.error {
+    color: var(--error-red);
+}
+
+.error-msg {
+    color: var(--error-red);
+    font-size: 0.625rem;
+    font-weight: var(--fw-500);
+    letter-spacing: -0.13px;
+
+    position: absolute;
+    bottom: 50px;
+    left: 0rem;
+    opacity: 0;
+}
+
+@media (min-width: 600px) {
+    .error-msg {
+        bottom: 0px;
+        left: 0rem;
+    }
+}
+
+.error-date-incomplete,
+.error-time-incomplete {
+    opacity: 1;
+}
+
+.error .error-msg {
+    opacity: 1;
+}
+
+.error-msg-required {
+    left: 1rem;
+}
+
+form p {
+    font-size: var(--fs-18);
+    font-weight: var(--fw-400);
+    letter-spacing: -0.22px;
+    line-height: var(--lh-30);
+}
+
+.date-block input,
+.time-block input {
+    margin-top: 0;
+}
+
+.pick-date,
+.pick-time {
+    text-align: initial;
+}
+
+@media (min-width: 600px) {
+    .date-block,
+    .time-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+/************* Form Code **************/
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    background-color: var(--white);
+    box-shadow: 0px 75px 100px -50px hsla(219 20% 28% / 0.5);
+    padding: 2rem;
+    margin-bottom: -4rem;
+    transform: translateY(-10rem);
+    width: 100%;
+}
+
+/* Hides the number arrows in Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hides the number arrows in Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media (min-width: 600px) {
+    form {
+        margin: 0 auto -4rem;
+        width: 545px;
+    }
+}
+
+@media (min-width: 767px) {
+    form {
+        margin-bottom: -7rem;
+        transform: translateY(-15rem);
+    }
+}
+
+@media (min-width: 1280px) {
+    .form-block {
+        background-image: url(../images/patterns/pattern-lines.svg),
+            url(../images/patterns/pattern-curve-bottom-right.svg);
+        background-position: left 33rem top 6rem, left -50px top -5rem;
+        background-repeat: no-repeat, no-repeat;
+    }
+
+    form {
+        margin-bottom: -17rem;
+        transform: translate(15rem, -24rem);
+    }
+
+    @media (min-width: 1366px) {
+        .form-block {
+            background-position: left 36rem top 6rem, left -50px top -5rem;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        .form-block {
+            background-position: left 38rem top 6rem, left -50px top -5rem;
+        }
+    }
+}
+
+.dropdown-block {
+    display: flex;
+}
+
+.people-block {
+    display: flex;
+}
+
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
+/*********** Dropdown Menu*************/
+.dropdown {
+    position: relative;
+}
+
+/***** Dropdown Button *****/
+.dropdown button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    width: 88px;
+}
+
+/***** Dropdown Content *****/
+.dropdown-content {
+    /* Hide the dropdown's content by default */
+    display: none;
+    /* Position it right below the trigger element */
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--white);
+    box-shadow: 0px 15px 25px 0px hsla(219, 20%, 28%, 0.25);
+    padding-block: 1rem;
+    min-width: 88px;
+    /* display dropdown over all other page content */
+    z-index: 9999;
+}
+
+/* Show the content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+    cursor: pointer;
+    display: block;
+}
+
+.check-am,
+.check-pm {
+    opacity: 0;
+}
+
+.dropdown-am,
+.dropdown-pm {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-inline: 1rem;
+}
+
+.btn-am-pm {
+    background-color: var(--white);
+    border: 0;
+    border-bottom: 1px solid hsl(0, 0%, 59%);
+}
+
