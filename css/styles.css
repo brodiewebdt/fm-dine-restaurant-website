@@ -810,6 +810,10 @@ p.people-display {
         .company-info {
             gap: 10rem;
         }
+
+        .footer {
+            padding-block: 6rem;
+        }
     }
 }
 
